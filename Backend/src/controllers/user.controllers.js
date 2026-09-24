@@ -33,3 +33,7 @@ const userRegister= asyncHandler( async (req,res,next)=>{
         new apiresponse(202,"user Registred Successfully")
     );
 })
+
+const userLogin=asyncHandler(async (req,res,next)=>{
+
+});
