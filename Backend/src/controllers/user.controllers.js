@@ -35,5 +35,6 @@ const userRegister= asyncHandler( async (req,res,next)=>{
 })
 
 const userLogin=asyncHandler(async (req,res,next)=>{
-
+    const {email,password,otp}=req.body;
+    
 });
