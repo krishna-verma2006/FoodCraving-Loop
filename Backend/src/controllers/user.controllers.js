@@ -83,3 +83,4 @@ const userLogout = asyncHandler(async (req, res, next) => {
     );
 });
 
+const getProfile
