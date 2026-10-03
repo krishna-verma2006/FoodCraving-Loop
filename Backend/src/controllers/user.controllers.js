@@ -83,4 +83,20 @@ const userLogout = asyncHandler(async (req, res, next) => {
     );
 });
 
-const getProfile
+const getProfile = asyncHandler(async(req,res,next)=>{
+    const userPerson= await userModel.findById(user._id);
+    if(!userPerson){
+        throw new apierror(202,"User does not find");
+    }
+    return res.status(202).json(
+        new apiresponse(202,"finally the user found and we find him")
+    )
+})
+
+
+export {
+    userRegister,
+    userLogin,
+    userLogout,
+    getProfile
+}
